@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: beige;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.logo span {
+  color: rgb(203, 26, 94);
+  margin-right: 10px;
+}
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+.nav-button {
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #050517;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  text-align: center;
+}
+.nav-button:hover {
+  background-color: #de8fc8;
+  transform: translateY(-3px);
+}
+.nav-button:active {
+  transform: translateY(0);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 20px;
+}
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid gray;
+  background: red;
+  transition-property: width, height;
+  transition-duration: 2s;
+}
+.profile-img:hover {
+    width: 400px;
+    height: 400px;
+  }
+
+
+
+.para {
+  /* border: 2px solid black; */
+  width: 609px;
+  height: 109px;
+}
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.buttons button {
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.resume {
+  background-color: gold;
+}
+.projects {
+  background-color: red;
+  color: white;
+}
+.contact {
+  background-color: skyblue;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  nav {
+    margin-top: 10px;
+  }
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .buttons button {
+    width: 80%;
+  }
+  p1{
+    color: aquamarine;
+  }
+}
