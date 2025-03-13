@@ -61,6 +61,39 @@
       button:hover {
         background-color: #0baee5;
       }
+      .contact{
+    background-color: beige;
+}
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+    background-color: rgb(46, 220, 15);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #0056b3;
+}
+
     </style>
   </head>
   <body>
@@ -68,9 +101,9 @@
       <h1>Anu Kawan</h1>
     </header>
     <nav>
-      <a href="index.html">About</a>
+      <a href="index.html">Home</a>
       <a href="resume.html">Resume</a>
-      <a href="#projects">Projects</a>
+      <a href="projectt.html">Projects</a>
       <a href="contactt.html">Contact</a>
     </nav>
     <section id="about">
@@ -107,11 +140,20 @@
               <li>Branding</li>
         </ul>
     </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>Details about my projects will be listed here.</p>
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Get in touch with me for collaborations or inquiries.</p>
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </section>
-    <section id="contact">
+  
+    <!-- <section id="contact">
       <h2>Contact</h2>
       <p>Feel free to reach out to me for collaborations or any inquiries.</p>
       <form action="https://formspree.io/f/your-form-id" method="POST">
@@ -126,7 +168,7 @@
 
         <button type="submit">Send Message</button>
       </form>
-    </section>
+    </section> -->
     <script>
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
