@@ -48,15 +48,21 @@ I help you tackle challenges with creative solutions in coding, design, and cont
       document.querySelector(".resume").addEventListener("click", function () {
         alert("Resume section coming soon!");
       });
-      document
-        .querySelector(".projects")
-        .addEventListener("click", function () {
-          alert("Projects section coming soon!");
-        });
+      // document
+      //   .querySelector(".projects")
+      //   .addEventListener("click", function () {
+      //     alert("Projects section coming soon!");
+      //   });
+        document.getElementById(".projects").addEventListener("click", function() {
+        window.location.href = "projectt.html";  // Redirect to projects.html
+    });
       document.querySelector(".contact").addEventListener("click", function () {
         alert("Contact section coming soon!");
       });
     </script>
+
+
+
 
 <footer style="text-align: center; margin-top: 50px; padding: 20px; background-color: #f8f8e5;">
   <p>Connect with me:</p>

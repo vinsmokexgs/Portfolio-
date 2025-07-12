@@ -130,11 +130,13 @@ header {
   }
   .buttons {
     flex-direction: column;
+    transform: scale(1.2);
   }
   .buttons button {
     width: 80%;
+    
   }
   p1{
-    color: aquamarine;
+    color: rgb(12, 12, 12);
   }
 }
